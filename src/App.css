@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+.root{
+  width: 100vh;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.principal{
+  padding: 0;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.encabezado{
+  height: 3vh;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  background: rgb(49, 68, 67);
+}
+
+.comun{
+  height: 97vh;
+  padding: 0%;
+}
+
+.vista{
+  padding: 0;
+  margin: 0;
+  width: 77vw;
+  background: rgb(6, 27, 27);
+  
+  
+}
+
+.vista-pestaña{
+  height: 4vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2px;
+  padding: 0%;
+  user-select: none;
+  background: rgb(38, 56, 55);
+  width: 77vw;
+}
+
+.vista-pagina{
+  height: 93vh;
+}
+
+.herramientas{
+  width: 3vw;
+}
+.explorador{
+  width: 20vw;
+  padding: 0;
+  background: rgb(22, 54, 53);
+}
+
+
+/* ENCABEZADO  */
+
+.encabezado-titulo{
+  color: antiquewhite;
+  font-size: 12px;
+  position: absolute;
+  right: 46vw;
+}
+.encabezado-menu-botones{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  height: 3vh;
+}
+.encabezado-boton{
+  height: 20px;
+  border: none;
+  font-size: 13px;
+  border-radius: 4px;
+  background: rgb(49, 68, 67);
+  color: antiquewhite;
+}
+.encabezado-boton:hover{
+  background: rgb(64, 94, 92);
+  transition: 200ms;
+}
+
+  /*  EXPLORADOR   */
+
+  .explorador-cabeza{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    font-size: 14px;
+    color: whitesmoke;
+    user-select: none;
+  }
+
+.explorador-titulo{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.explorador-boton{
+  height: auto;
+  border: none;
+  margin: 5px;
+  border-radius: 4px;
+  color: darkblue;
+  background: rgb(22, 54, 53);
+  color: antiquewhite;
+}
+.explorador-boton:hover{
+  background: rgb(64, 94, 92);
+  transition: 200ms;
+}
+
+.explorador-contenido{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.explorador-btn-p{
+  padding-left: 70px ;
+  padding-right: 70px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  margin-left: 50px ;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  border: none;
+  border-radius: 20px;
+  user-select: none;
+
+  font-size: 14px;
+
+}
+
+.explorador-btn-p{
+  background: rgb(161, 201, 198);
+  transition: 200ms;
+}
+
+.explorador-btn-p:hover{
+  background: rgb(46, 128, 125);
+  color: antiquewhite;
+}
+
+/*   PESTAÑAS   */
+
+.pestaña-cajon{
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 4vh;
+  border-right: 1px solid rgb(95, 93, 93);
+  border-bottom: 1px solid rgb(95, 93, 93);
+}
+.pestaña-titulo{
+  font-size: 13px;
+  padding-top: 14px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pestaña-boton{
+  width: 20px ;
+  height: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: rgb(38, 56, 55);
+  color: rgb(38, 56, 55);
+  transition: 200ms;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pestaña-boton:hover{
+  color: antiquewhite;
+  background: rgb(51, 70, 69);
 }
